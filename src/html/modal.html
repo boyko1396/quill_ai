@@ -1,0 +1,102 @@
+<div class="u-scrollbar popup" data-popup="popup-registration" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content popup__content--theme-black popup__content--size-md">
+      <header class="popup__header">
+        <button type="button" class="js-button-close popup__btn-close">
+          <svg class="u-icon btn-close__icon">
+            <use xlink:href="images/icons/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p class="title fs-3 popup__header-title">Регистрация</p>
+        <p class="popup__header-subtitle">Уже есть аккаунт? <a href="javascript:void(0);" data-modal="popup-login"><strong>Войдите</strong></a></p>
+      </header>
+      <form action="#" class="popup__form">
+        <div class="u-input popup__form-input">
+          <label class="u-input__label">
+            <input type="text" name="name" class="u-input__el u-input__el--size-sm u-input__el--theme-white-fill" required placeholder="Ваше имя">
+          </label>
+        </div>
+        <div class="u-input popup__form-input">
+          <label class="u-input__label">
+            <input type="email" name="email" class="u-input__el u-input__el--size-sm u-input__el--theme-white-fill" required placeholder="Ваш e-mail">
+          </label>
+        </div>
+        <div class="u-input popup__form-input">
+          <label class="u-input__label">
+            <input type="password" name="password" class="u-input__el u-input__el--size-sm u-input__el--theme-white-fill" required placeholder="Пароль">
+          </label>
+        </div>
+        <button type="submit" class="btn btn--size-md btn--theme-accent-gradient-fill popup__form-btn">
+          <span class="btn__inner">
+            <span class="btn__title">Зарегистрироваться</span>
+          </span>
+        </button>
+      </form>
+      <button type="button" class="btn btn--size-md btn--theme-black-fill popup__auth-btn">
+        <span class="btn__inner">
+          <svg class="u-icon btn__icon btn__icon--dir-ltr">
+            <use xlink:href="images/icons/icons.svg#yandex-color"></use>
+          </svg>
+          <span class="btn__title">Войти с Яндекс ID</span>
+        </span>
+      </button>
+      <button type="button" class="btn btn--size-md btn--theme-black-fill popup__auth-btn">
+        <span class="btn__inner">
+          <svg class="u-icon btn__icon btn__icon--dir-ltr">
+            <use xlink:href="images/icons/icons.svg#vk-color"></use>
+          </svg>
+          <span class="btn__title">Войти с VK ID</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="u-scrollbar popup" data-popup="popup-login" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content popup__content--theme-black popup__content--size-md">
+      <header class="popup__header">
+        <button type="button" class="js-button-close popup__btn-close">
+          <svg class="u-icon btn-close__icon">
+            <use xlink:href="images/icons/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p class="title fs-3 popup__header-title">Вход</p>
+        <p class="popup__header-subtitle">Нет аккаунта? <a href="javascript:void(0);" data-modal="popup-registration"><strong>Зарегистрируйтесь</strong></a></p>
+      </header>
+      <form action="#" class="popup__form">
+        <div class="u-input popup__form-input">
+          <label class="u-input__label">
+            <input type="email" name="email" class="u-input__el u-input__el--size-sm u-input__el--theme-white-fill" required placeholder="Ваш e-mail">
+          </label>
+        </div>
+        <div class="u-input popup__form-input">
+          <label class="u-input__label">
+            <input type="password" name="password" class="u-input__el u-input__el--size-sm u-input__el--theme-white-fill" required placeholder="Пароль">
+          </label>
+        </div>
+        <button type="submit" class="btn btn--size-md btn--theme-accent-gradient-fill popup__form-btn">
+          <span class="btn__inner">
+            <span class="btn__title">Войти</span>
+          </span>
+        </button>
+      </form>
+      <button type="button" class="btn btn--size-md btn--theme-black-fill popup__auth-btn">
+        <span class="btn__inner">
+          <svg class="u-icon btn__icon btn__icon--dir-ltr">
+            <use xlink:href="images/icons/icons.svg#yandex-color"></use>
+          </svg>
+          <span class="btn__title">Войти с Яндекс ID</span>
+        </span>
+      </button>
+      <button type="button" class="btn btn--size-md btn--theme-black-fill popup__auth-btn">
+        <span class="btn__inner">
+          <svg class="u-icon btn__icon btn__icon--dir-ltr">
+            <use xlink:href="images/icons/icons.svg#vk-color"></use>
+          </svg>
+          <span class="btn__title">Войти с VK ID</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>

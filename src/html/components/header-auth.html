@@ -1,0 +1,59 @@
+<header class="@@el header">
+  <div class="container container--size-md header__container">
+    <a href="/" class="logo logo--size-md logo--theme-black header__logo">
+      <span class="logo__inner">
+        <picture class="logo__picture">
+          <img src="images/logo-black.svg" alt="Quill AI">
+        </picture>
+        <span class="logo__title">Quill AI</span>
+      </span>
+    </a>
+    <div class="header__dropdown">
+      <nav class="u-nav header__nav" role="navigation">
+        <ul class="u-nav__list">
+          <li class="u-nav__item">
+            <a href="my_projects.html" class="js-anchor u-nav__link">Мои заказы</a>
+          </li>
+          <li class="u-nav__item">
+            <a href="project_topics.html" class="u-nav__link">Темы проектов</a>
+          </li>
+          <li class="u-nav__item">
+            <a href="#faq" class="js-anchor u-nav__link">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="d-lg-none header__profile">
+        <button type="button" class="js-header-profile-toggle header__profile-toggle">
+          <svg class="u-icon">
+            <use xlink:href="images/icons/icons.svg#profile-icon"></use>
+          </svg>
+        </button>
+        <div class="header__profile-dropdown">
+          <a href="#" class="header__profile-dropdown-link">
+            <svg class="u-icon header__profile-dropdown-link-icon">
+              <use xlink:href="images/icons/icons.svg#profile-exit"></use>
+            </svg>
+            <span class="header__profile-dropdown-link-title">Выйти</span>
+          </a>
+        </div>
+      </div>
+      <div class="d-lg-block btn-group header__btn-group">
+        <div class="btn-group__inner">
+          <div class="btn-group__col">
+            <a href="#" class="btn btn--size-md btn--theme-black-fill btn-group__item">
+              <span class="btn__inner">
+                <span class="btn__title">Выйти</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="js-header-toggle d-lg-block toggle-nav header__toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="js-header-toggle-close header__overlay"></div>
+</header>

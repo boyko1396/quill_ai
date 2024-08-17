@@ -1,0 +1,97 @@
+.intro {
+  padding: 80rem 0;
+  @media (max-width: $lg) {
+    padding: 0 0 30rem;
+  }
+  &__container {
+  }
+  &__block {
+    background: $blackColor;
+    padding: 80rem 48rem;
+    color: $whiteColor;
+    border-radius: $radiusLg;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    @media (max-width: $lg) {
+      margin-right: var(--gap-container-);
+      margin-left: var(--gap-container-);
+      padding: 83rem var(--gap-container);
+      border-radius: 0 0 $radiusLg $radiusLg;
+    }
+    &:before {
+      background: rgba($pacificBlueColor, .25);
+      width: 474rem;
+      height: 474rem;
+      content: '';
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      filter: blur(50px);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+  }
+  &__title {
+    margin: 0 0 36rem;
+    text-align: center;
+    @media (max-width: $lg) {
+      max-width: 440rem;
+      margin: 0 auto 24rem;
+    }
+  }
+  &__form {
+    @media (max-width: $lg) {
+      max-width: 440rem;
+      margin: 0 auto;
+    }
+    @media (max-width: $sm) {
+    }
+    &-body {
+      margin: 0 0 16rem;
+      position: relative;
+    }
+    &-input {
+      .u-input__el {
+        padding-right: 164rem;
+      }
+    }
+    &-btn {
+      position: absolute;
+      top: 50%;
+      right: 24rem;
+      transform: translateY(-50%);
+      @media (max-width: $lg) {
+        width: 100%;
+        margin: 12rem 0 0;
+        position: relative;
+        top: 0;
+        right: 0;
+        transform: none;
+      }
+    }
+    &-seperator {
+      margin: 0 0 16rem;
+      font-weight: 600;
+      font-size: var(--fs-7);
+      color: $accentLightColor;
+      text-align: center;
+    }
+    &-control-group {
+      @media (max-width: $sm) {
+        margin-right: var(--gap-container-);
+        margin-left: var(--gap-container-);
+        overflow: hidden;
+      }
+      .control-group__inner {
+        @media (max-width: $sm) {
+          margin-bottom: -20rem;
+          padding: 0 var(--gap-container) 20rem;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+        }
+      }
+    }
+  }
+}

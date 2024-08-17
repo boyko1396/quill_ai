@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Quill AI'
+  })
+  <body class="u-scrollbar">
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- intro BEGIN -->
+          <section id="intro" class="intro">
+            <div class="container container--size-md intro__container">
+              <div class="intro__block">
+                <h1 class="intro__title">Создайте <span class="color-accent">индивидуальный проект</span> с&nbsp;помощью нейросети</h1>
+                <form action="#" class="intro__form">
+                  <div class="intro__form-body">
+                    <div class="u-input intro__form-input">
+                      <label class="u-input__label">
+                        <input type="text" name="project_name" class="u-input__el u-input__el--size-md u-input__el--theme-grey-fill" required placeholder="Введите тему проекта">
+                      </label>
+                    </div>
+                    <button type="button" data-modal="popup-registration" class="btn btn--size-md btn--theme-black-fill-outline intro__form-btn">
+                      <span class="btn__inner">
+                        <picture class="u-icon btn__icon btn__icon--dir-ltr btn__icon--hover btn__icon--hover-first">
+                          <img src="images/icons/stars.svg" width="24" height="24" alt="Создать">
+                        </picture>
+                        <span class="btn__title">Создать</span>
+                        <picture class="u-icon btn__icon btn__icon--dir-rtl btn__icon--hover btn__icon--hover-second">
+                          <img src="images/icons/stars.svg" width="24" height="24" alt="Создать">
+                        </picture>
+                      </span>
+                    </button>
+                  </div>
+                  <p class="d-lg-block intro__form-seperator">или</p>
+                  <div class="control-group intro__form-control-group">
+                    <div class="control-group__inner">
+                      <div class="control-group__col">
+                        <label class="u-checkbox-services u-checkbox-services--size-md u-checkbox-services--theme-white-outline control-group__item">
+                          <input type="radio" name="services_type" class="u-checkbox-services__control" checked value="Проект">
+                          <span class="u-checkbox-services__inner">
+                            <span class="u-checkbox-services__text">Проект</span>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="control-group__col">
+                        <label class="u-checkbox-services u-checkbox-services--size-md u-checkbox-services--theme-white-outline control-group__item">
+                          <input type="radio" name="services_type" class="u-checkbox-services__control" value="Курсовая работа">
+                          <span class="u-checkbox-services__inner">
+                            <span class="u-checkbox-services__text">Курсовая <span class="d-sm-none">работа</span></span>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="control-group__col">
+                        <label class="u-checkbox-services u-checkbox-services--size-md u-checkbox-services--theme-white-outline control-group__item">
+                          <input type="radio" name="services_type" class="u-checkbox-services__control" value="Реферат">
+                          <span class="u-checkbox-services__inner">
+                            <span class="u-checkbox-services__text">Реферат</span>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="control-group__col">
+                        <label class="u-checkbox-services u-checkbox-services--size-md u-checkbox-services--theme-white-outline control-group__item">
+                          <input type="radio" name="services_type" class="u-checkbox-services__control" value="Текст">
+                          <span class="u-checkbox-services__inner">
+                            <span class="u-checkbox-services__text">Текст</span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+          <!-- intro END -->
+          <!-- projects-section BEGIN -->
+          <section id="projects-section" class="projects-section">
+            <div class="container container--size-md projects-section__container">
+              <h2 class="projects-section__title">Последние проекты</h2>
+              <div class="projects-section__list">
+                <div class="row projects-section__list-row">
+                  <div class="row__col--4 projects-section__list-col">
+                    <article class="project-card projects-section__list-card">
+                      <div class="project-card__inner">
+                        <div class="project-card__content">
+                          <header class="project-card__header">
+                            <h3 class="project-card__title">
+                              <a href="project.html" class="project-card__link">Конструктор домашнего ПК</a>
+                            </h3>
+                            <div class="project-card__type"></div>
+                          </header>
+                          <div class="u-content project-card__text">
+                            <p>Проект представляет собой онлайн конструктор для сборки домашнего компьютера с проверкой совместимости комплектующих. Пользовате...</p>
+                          </div>
+                        </div>
+                        <footer class="project-card__footer">
+                          <p class="project-card__rubric">IT проект</p>
+                          <time class="project-card__date">2 минуты назад</time>
+                        </footer>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--4 projects-section__list-col">
+                    <article class="project-card projects-section__list-card">
+                      <div class="project-card__inner">
+                        <div class="project-card__content">
+                          <header class="project-card__header">
+                            <h3 class="project-card__title">
+                              <a href="project.html" class="project-card__link">Лайфхаки для подготовки к ЕГЭ  по профильной математике</a>
+                            </h3>
+                            <div class="project-card__type">
+                              <p class="u-badge u-badge--theme-accent-gradient-fill u-badge--size-md project-card__pro">PRO</p>
+                            </div>
+                          </header>
+                          <div class="u-content project-card__text">
+                            <p>Проект представляет собой сборник эффективных лайфхаков для подготовки к сдаче ЕГЭ по профильной математике...</p>
+                          </div>
+                        </div>
+                        <footer class="project-card__footer">
+                          <p class="project-card__rubric">Образовательный проект</p>
+                          <time class="project-card__date">7 минут назад</time>
+                        </footer>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--4 projects-section__list-col">
+                    <article class="project-card projects-section__list-card">
+                      <div class="project-card__inner">
+                        <div class="project-card__content">
+                          <header class="project-card__header">
+                            <h3 class="project-card__title">
+                              <a href="project.html" class="project-card__link">Смотровая площадка в&nbsp;горах</a>
+                            </h3>
+                            <div class="project-card__type"></div>
+                          </header>
+                          <div class="u-content project-card__text">
+                            <p>Проект по созданию смотровой площадки в&nbsp;горах для уникальных панорамных видов на&nbsp;природу и&nbsp;окружающие горные массивы...</p>
+                          </div>
+                        </div>
+                        <footer class="project-card__footer">
+                          <p class="project-card__rubric">Инфраструктурный проект</p>
+                          <time class="project-card__date">16 минут назад</time>
+                        </footer>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--4 projects-section__list-col">
+                    <article class="project-card projects-section__list-card">
+                      <div class="project-card__inner">
+                        <div class="project-card__content">
+                          <header class="project-card__header">
+                            <h3 class="project-card__title">
+                              <a href="project.html" class="project-card__link">Новые источники нефти и добыча</a>
+                            </h3>
+                            <div class="project-card__type"></div>
+                          </header>
+                          <div class="u-content project-card__text">
+                            <p>Проект поиска и разработки новых месторождений нефти, внедрение технологий для увеличения нефтеотдачи и сведения...</p>
+                          </div>
+                        </div>
+                        <footer class="project-card__footer">
+                          <p class="project-card__rubric">Технологический проект</p>
+                          <time class="project-card__date">34 минуты назад</time>
+                        </footer>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--4 projects-section__list-col">
+                    <article class="project-card projects-section__list-card">
+                      <div class="project-card__inner">
+                        <div class="project-card__content">
+                          <header class="project-card__header">
+                            <h3 class="project-card__title">
+                              <a href="project.html" class="project-card__link">Роль пословиц и&nbsp;поговорок  в нравственном воспитании...</a>
+                            </h3>
+                            <div class="project-card__type"></div>
+                          </header>
+                          <div class="u-content project-card__text">
+                            <p>Проект посвящен роли посовиц и&nbsp;поговорок в&nbsp;нравственном воспитании детей. Исследование направлено на&nbsp;изучение влияни...</p>
+                          </div>
+                        </div>
+                        <footer class="project-card__footer">
+                          <p class="project-card__rubric">Исследовательский проект</p>
+                          <time class="project-card__date">Час назад</time>
+                        </footer>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--4 projects-section__list-col">
+                    <article class="project-card projects-section__list-card">
+                      <div class="project-card__inner">
+                        <div class="project-card__content">
+                          <header class="project-card__header">
+                            <h3 class="project-card__title">
+                              <a href="project.html" class="project-card__link">Проект 'Организация и&nbsp;обустройство футбольного поля'</a>
+                            </h3>
+                            <div class="project-card__type">
+                              <p class="u-badge u-badge--theme-accent-gradient-fill u-badge--size-md project-card__pro">PRO</p>
+                            </div>
+                          </header>
+                          <div class="u-content project-card__text">
+                            <p>Проект 'Организация и&nbsp;обустройство футбольного поля' направлен на создание и&nbsp;обустройство игрового пространства в...</p>
+                          </div>
+                        </div>
+                        <footer class="project-card__footer">
+                          <p class="project-card__rubric">Спортивный проект</p>
+                          <time class="project-card__date">Час назад</time>
+                        </footer>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--4 projects-section__list-col">
+                    <article class="project-card projects-section__list-card">
+                      <div class="project-card__inner">
+                        <div class="project-card__content">
+                          <header class="project-card__header">
+                            <h3 class="project-card__title">
+                              <a href="project.html" class="project-card__link">Новые источники нефти и добыча</a>
+                            </h3>
+                            <div class="project-card__type"></div>
+                          </header>
+                          <div class="u-content project-card__text">
+                            <p>Проект поиска и разработки новых месторождений нефти, внедрение технологий для увеличения нефтеотдачи и сведения...</p>
+                          </div>
+                        </div>
+                        <footer class="project-card__footer">
+                          <p class="project-card__rubric">Технологический проект</p>
+                          <time class="project-card__date">Час назад</time>
+                        </footer>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--4 projects-section__list-col">
+                    <article class="project-card projects-section__list-card">
+                      <div class="project-card__inner">
+                        <div class="project-card__content">
+                          <header class="project-card__header">
+                            <h3 class="project-card__title">
+                              <a href="project.html" class="project-card__link">Природные красоты  Вологодской области</a>
+                            </h3>
+                            <div class="project-card__type">
+                              <p class="u-badge u-badge--theme-accent-gradient-fill u-badge--size-md project-card__pro">PRO</p>
+                            </div>
+                          </header>
+                          <div class="u-content project-card__text">
+                            <p>Проект посвящен природным объектам и&nbsp;явлениям Вологодской области, таким как геологическое обнажение Опоки, горы Ципина...</p>
+                          </div>
+                        </div>
+                        <footer class="project-card__footer">
+                          <p class="project-card__rubric">Спортивный проект</p>
+                          <time class="project-card__date">2 часа назад</time>
+                        </footer>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--4 projects-section__list-col">
+                    <article class="project-card projects-section__list-card">
+                      <div class="project-card__inner">
+                        <div class="project-card__content">
+                          <header class="project-card__header">
+                            <h3 class="project-card__title">
+                              <a href="project.html" class="project-card__link">Экологичные джипы:  выбор и сравнение</a>
+                            </h3>
+                            <div class="project-card__type"></div>
+                          </header>
+                          <div class="u-content project-card__text">
+                            <p>Проект посвящен сравнительному анализу экологичных джипов с целью выявления моделей с наиболее низким уровнем выбросов...</p>
+                          </div>
+                        </div>
+                        <footer class="project-card__footer">
+                          <p class="project-card__rubric">Исследовательский проект</p>
+                          <time class="project-card__date">2 часа назад</time>
+                        </footer>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--4 projects-section__list-col">
+                    <article class="project-card projects-section__list-card">
+                      <div class="project-card__inner">
+                        <div class="project-card__content">
+                          <header class="project-card__header">
+                            <h3 class="project-card__title">
+                              <a href="project.html" class="project-card__link">Традиционные народные танцы  в России</a>
+                            </h3>
+                            <div class="project-card__type">
+                              <p class="u-badge u-badge--theme-accent-gradient-fill u-badge--size-md project-card__pro">PRO</p>
+                            </div>
+                          </header>
+                          <div class="u-content project-card__text">
+                            <p>Проект направлен на изучение и&nbsp;сохранение культурного наследия традиционных народных танцев в России. Целью проекта является...</p>
+                          </div>
+                        </div>
+                        <footer class="project-card__footer">
+                          <p class="project-card__rubric">Спортивный проект</p>
+                          <time class="project-card__date">2 часа назад</time>
+                        </footer>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--4 projects-section__list-col">
+                    <article class="project-card projects-section__list-card">
+                      <div class="project-card__inner">
+                        <div class="project-card__content">
+                          <header class="project-card__header">
+                            <h3 class="project-card__title">
+                              <a href="project.html" class="project-card__link">Проект по оценке последствий Чернобыльской катастрофы</a>
+                            </h3>
+                            <div class="project-card__type"></div>
+                          </header>
+                          <div class="u-content project-card__text">
+                            <p>Проект посвящен оценке последствий Чернобыльской катастрофы и ее влиянию на здоровье людей. Исследование предполагает...</p>
+                          </div>
+                        </div>
+                        <footer class="project-card__footer">
+                          <p class="project-card__rubric">Технологический проект</p>
+                          <time class="project-card__date">2 часа назад</time>
+                        </footer>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="row__col--4 projects-section__list-col">
+                    <article class="project-card projects-section__list-card">
+                      <div class="project-card__inner">
+                        <div class="project-card__content">
+                          <header class="project-card__header">
+                            <h3 class="project-card__title">
+                              <a href="project.html" class="project-card__link">Онлайн-гид по волейболу</a>
+                            </h3>
+                            <div class="project-card__type"></div>
+                          </header>
+                          <div class="u-content project-card__text">
+                            <p>Наш проект - это онлайн-гид по волейболу, предназначенный для тех, кто хочет ознакомиться с основными правилами и...</p>
+                          </div>
+                        </div>
+                        <footer class="project-card__footer">
+                          <p class="project-card__rubric">Исследовательский проект</p>
+                          <time class="project-card__date">2 часа назад</time>
+                        </footer>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- projects-section END -->
+          <!-- faq BEGIN -->
+          <section id="faq" class="faq">
+            <div class="container container--size-md faq__container">
+              <h2 class="faq__title">Вопросы и ответы</h2>
+              <div itemscope itemtype="https://schema.org/FAQPage" class="faq__list">
+                <article class="faq-card faq-card--theme-grey faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="faq-card__header">
+                    <button type="button" class="js-faq-card-toggle faq-card__btn">
+                      <h3 itemprop="name" class="fs-3 faq-card__title">Что я получу в платной версии проекта?</h3>
+                    </button>
+                    <div class="faq-card__icon">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                    <div class="faq-card__inner">
+                      <div class="u-content faq-card__text">
+                        <p>Платная версия проекта включает в себя приватную часть, которая состоит из нескольких разделов, включая список источников и ссылок. Она представлена в веб-версии и в виде структурированного документа в формате MS Word, содержащего около 15 страниц текста и доступного для скачивания.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="faq-card faq-card--theme-grey faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="faq-card__header">
+                    <button type="button" class="js-faq-card-toggle faq-card__btn">
+                      <h3 itemprop="name" class="fs-3 faq-card__title">Попадет ли мой проект в&nbsp;открытый доступ?</h3>
+                    </button>
+                    <div class="faq-card__icon">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                    <div class="faq-card__inner">
+                      <div class="u-content faq-card__text">
+                        <p>В открытом доступе на сайте размещается только описание проекта (название, цель, проблема, ресурсы и т.д.). Содержание разделов проекта доступно только для оплатившего проект пользователя.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="faq-card faq-card--theme-grey faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="faq-card__header">
+                    <button type="button" class="js-faq-card-toggle faq-card__btn">
+                      <h3 itemprop="name" class="fs-3 faq-card__title">Является ли сгенерированный проект уникальным?</h3>
+                    </button>
+                    <div class="faq-card__icon">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                    <div class="faq-card__inner">
+                      <div class="u-content faq-card__text">
+                        <p>Да, каждый сгенерированный проект уникален, даже если тема проекта, заданная изначально, повторяется.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="faq-card faq-card--theme-grey faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="faq-card__header">
+                    <button type="button" class="js-faq-card-toggle faq-card__btn">
+                      <h3 itemprop="name" class="fs-3 faq-card__title">Как купить готовый проект?</h3>
+                    </button>
+                    <div class="faq-card__icon">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                    <div class="faq-card__inner">
+                      <div class="u-content faq-card__text">
+                        <p>Готовый проект купить нельзя, так как каждый проект уникален, но всегда можно сгенерировать свой подобный проект по такой же теме.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="faq-card faq-card--theme-grey faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="faq-card__header">
+                    <button type="button" class="js-faq-card-toggle faq-card__btn">
+                      <h3 itemprop="name" class="fs-3 faq-card__title">Как получить оплаченный проект?</h3>
+                    </button>
+                    <div class="faq-card__icon">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                    <div class="faq-card__inner">
+                      <div class="u-content faq-card__text">
+                        <p>Все оплаченные пользователем проекты доступны в личном кабинете бессрочно.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+                <article class="faq-card faq-card--theme-grey faq__list-card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                  <div class="faq-card__header">
+                    <button type="button" class="js-faq-card-toggle faq-card__btn">
+                      <h3 itemprop="name" class="fs-3 faq-card__title">Кому принадлежит право на проект, как объект интеллектуальной собственности?</h3>
+                    </button>
+                    <div class="faq-card__icon">
+                      <svg class="u-icon">
+                        <use xlink:href="images/icons/icons.svg#plus"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer" class="faq-card__dropdown">
+                    <div class="faq-card__inner">
+                      <div class="u-content faq-card__text">
+                        <p>Пользователю, оплатившему проект, принадлежит исключительное имущественное право на приватную (скрытую из общего доступа) часть проекта и неисключительное право на публичную часть проекта (описание). Администратор сайта оставляет за собой право размещения публичной части проекта на сайте в открытом доступе.</p>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+          <!-- faq END -->
+          <!-- appeal BEGIN -->
+          <section id="appeal" class="appeal">
+            <div class="container container--size-md appeal__container">
+              <div class="appeal__block">
+                <picture class="appeal__picture">
+                  <img src="images/appeal-img.svg" width="235" height="260" alt="Начните работу над своим проектом прямо сейчас">
+                </picture>
+                <div class="appeal__content">
+                  <h2 class="appeal__title">Начните работу над своим проектом прямо сейчас</h2>
+                  <a href="#intro" class="js-anchor btn btn--size-md btn--theme-white-fill appeal__btn">
+                    <span class="btn__inner">
+                      <span class="btn__title">Начать генерировать</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- appeal END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

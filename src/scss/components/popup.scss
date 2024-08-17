@@ -1,0 +1,113 @@
+.popup {
+  background: rgba($blackColor, .75);
+  width: 100%;
+  width: 100vw;
+  padding: var(--gap-fluid);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transition: all .4s ease-in-out;
+  transition-property: visibility, opacity;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 2000;
+  @media (max-width: $md) {
+  }
+  &:not(.is-open) {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    .popup__content {
+      transform: translateY(-20vh);
+      opacity: 0;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+  }
+  &__btn-close {
+    @extend %area-click, %btn-reset;
+    width: 24rem;
+    height: 24rem;
+    color: #9A9A9A;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: $transition;
+    transition-property: color;
+    &:hover {
+      text-decoration: none;
+      @media (min-width: $lg-mf) {
+        color: $blackColor;
+      }
+    }
+    .u-icon {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__content {
+    width: 100%;
+    max-width: 480rem;
+    margin: 0 auto;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out;
+    position: relative;
+    &--size {
+      &-md {
+        max-width: 640rem;
+        padding: 48rem;
+      }
+    }
+    &--theme {
+      &-black {
+        background: $whiteColor;
+        color: $blackColor;
+        border-radius: $radiusSm;
+      }
+    }
+  }
+  &__header {
+    text-align: center;
+    position: relative;
+    &-title {
+      margin: 0 0 32rem;
+    }
+    &-subtitle {
+      margin: -24rem 0 32rem;
+      font-size: var(--fs-4);
+      a {
+        color: $accentLightColor;
+        transition: $transition;
+        transition-property: color;
+        &:hover {
+          text-decoration: none;
+          @media (min-width: $lg-mf) {
+            color: $accentColor;
+          }
+        }
+      }
+    }
+  }
+  &__form {
+    &-input {
+      margin: 0 0 8rem;
+      .u-input__el {
+        font-family: $fontAccent;
+      }
+    }
+    &-btn {
+      width: 100%;
+    }
+  }
+  &__auth-btn {
+    width: 100%;
+    margin: 8rem 0 0;
+    &:last-child {
+      margin-bottom: 24rem;
+    }
+  }
+}

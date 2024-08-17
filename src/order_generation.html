@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Quill AI - Генерация заказа'
+  })
+  <body class="u-scrollbar">
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header-auth-typical.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- order-generation BEGIN -->
+          <section class="order-generation">
+            <div class="container container--size-md order-generation__container">
+              <div class="order-generation__block">
+                <div class="order-generation__progress">
+                  <svg width="100" height="100" viewBox="0 0 36 36">
+                    <defs>
+                      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#1DB6BD; stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#29D9E1; stop-opacity:1" />
+                      </linearGradient>
+                    </defs>
+                    <path id="circle"
+                          d="M18 2.0845
+                             a 15.9155 15.9155 0 0 1 0 31.831
+                             a 15.9155 15.9155 0 0 1 0 -31.831"
+                          fill="none"
+                          stroke="url(#gradient)"
+                          stroke-width="3"
+                          stroke-dasharray="100, 100"
+                          stroke-linecap="butt"/>
+                  </svg>
+                  <div class="order-generation__text">
+                    <span class="js-timer"></span>
+                  </div>
+                </div>
+                <h3 class="js-typing-cursor font-size-1 order-generation__title" data-typing="Ищем информацию в интернете...; Анализируем источники...; Подготавливаем текст...; Отмечаем самое важное...; Генерируем разделы...; Генерируем основную часть..."></h3>
+                <div class="u-content order-generation__description">
+                  <p>Как только закончим пришлем письмо на вашу почту</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- order-generation END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer-typical.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

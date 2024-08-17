@@ -1,0 +1,37 @@
+@use 'sass:math';
+
+/** Local font inclusion from the "./src/fonts" folder */
+@import 'config/fonts';
+
+/** Variable inclusion */
+@import 'config/vars';
+
+/** Inclusion of sass functions, mixins, and style extends */
+@import 'config/functions';
+@import 'config/mixins';
+@import 'config/patternSelectors';
+
+/** Reset */
+@import 'config/default';
+
+/** Libraries */
+
+/** Common parameters, templates, and utility classes */
+@import 'config/media';
+@import 'config/base';
+
+/** Common BEM blocks used throughout the project */
+@import 'components/u-breadcrumbs';
+@import 'config/common';
+@import 'components/popup';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/intro';
+@import 'components/projects-section';
+@import 'components/faq';
+@import 'components/appeal';
+@import 'components/projects-page';
+@import 'components/order-generation';
+@import 'components/page';
+
+/** Inclusion of styles for individual blocks and sections */

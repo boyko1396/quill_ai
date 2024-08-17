@@ -1,0 +1,93 @@
+$siteResolution: 1px;
+$mainFont: 'Open Sans';
+$accentFont: 'Lato';
+$mainWeight: 400;
+$lineHeight1: 1.3;
+$lineHeight2: 1.38888888889;
+$lineHeight3: 1.35416666667;
+$lineHeight4: 1.36111111111;
+$lineHeight5: 1.5;
+$lineHeightDefault: $lineHeight1;
+
+$containerWidthMd: 1248rem;
+
+$gap: 12rem;
+$gapFluid: 24rem;
+
+$radiusXs: 6rem;
+$radiusSm: 10rem;
+$radiusMd: 18rem;
+$radiusSemi: 20rem;
+$radiusLg: 40rem;
+
+$whiteColor: #ffffff;
+$blackColor: #0F0F0F;
+$greyColor: #FAFAFA;
+$greyDarkColor: #DDDDDD;
+$greyLightColor: #F4F4F4;
+$pacificBlueColor: #1DB6BD;
+$pacificBlueLightColor: #29D9E1;
+$accentColor: $pacificBlueColor;
+$accentLightColor: $pacificBlueLightColor;
+
+$gradientAccent1: linear-gradient(259.3deg, $pacificBlueColor 0%, $pacificBlueLightColor 100%);
+
+$bgSite: $whiteColor;
+
+$fontFamily: $mainFont, $accentFont, sans-serif, Arial;
+$fontAccent: $accentFont, $mainFont, sans-serif, Arial;
+$fontColor: $blackColor;
+$fontWeight: $mainWeight;
+
+$transition: all .4s 0ms;
+
+$xl: 1340px;
+$xl-mf: $xl + 1;
+
+$lg: 1199px;
+$lg-mf: $lg + 1;
+
+$md: 991px;
+$md-mf: $md + 1;
+
+$sm: 767px;
+$sm-mf: $sm + 1;
+
+$xs: 576px;
+$xs-mf: $xs + 1;
+
+:root {
+  --fs-default: 14rem;
+  --fs-1: 48rem;
+  --fs-2: 36rem;
+  --fs-3: 24rem;
+  --fs-4: 18rem;
+  --fs-5: 16rem;
+  --fs-6: 14rem;
+  --fs-7: 12rem;
+  --fs-8: 10rem;
+  --fs-9: 8rem;
+  --fs-10: 13rem;
+
+  --gap: 12rem;
+  --gap-: -12rem;
+  --gap-fluid: 24rem;
+  --gap-fluid-: -24rem;
+  --gap-container: var(--gap-fluid);
+  --gap-container-: var(--gap-fluid-);
+
+  --scroll-offset: 96rem;
+
+  --header-size: var(--scroll-offset);
+
+  --vh: 1vh;
+  @media (max-width: $lg) {
+    --fs-1: 22rem;
+    --fs-2: 20rem;
+    --fs-3: 16rem;
+    --fs-4: 16rem;
+
+    --gap-container: 16rem;
+    --gap-container-: -16rem;
+  }
+}

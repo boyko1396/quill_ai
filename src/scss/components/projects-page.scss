@@ -1,0 +1,187 @@
+.projects-page {
+  padding: 80rem 0;
+  @media (max-width: $sm) {
+    padding-bottom: 60rem;
+  }
+  &__container {
+  }
+  &__breadcrumbs {
+    margin: -56rem 0 36rem;
+    @media (max-width: $lg) {
+      margin-bottom: 24rem;
+    }
+  }
+  &__title {
+    margin: 0 0 36rem;
+  }
+  &__subtitle {
+    margin: -24rem 0 36rem;
+    font-size: var(--fs-4);
+    a {
+      color: $accentLightColor;
+      transition: $transition;
+      transition-property: color;
+      &:hover {
+        text-decoration: none;
+        @media (min-width: $lg-mf) {
+        }
+      }
+    }
+  }
+  &__header {
+    &-col {
+      &--title {
+        @media (max-width: $sm) {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+      &--content {
+        @media (max-width: $sm) {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+  &__main {
+    &-row {
+    }
+    &-col {
+      &--content {
+        @media (max-width: $sm) {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+      &--aside {
+        @media (max-width: $sm) {
+          max-width: 100%;
+          margin-top: 24rem;
+          flex-basis: 100%;
+        }
+        &.is-sticky {
+          align-self: flex-start;
+          position: sticky;
+          top: calc(var(--header-size) + var(--gap-fluid));
+          @media (max-width: $sm) {
+            position: relative;
+            top: 0;
+          }
+        }
+      }
+      &--our-projects {
+      }
+    }
+    &-list {
+    }
+    &-card {
+      &:not(:last-child) {
+        margin-bottom: 32rem;
+        @media (max-width: $lg) {
+          margin-bottom: 24rem;
+        }
+      }
+    }
+    &-aside {
+    }
+  }
+  &__badge {
+    margin: 0 0 12rem;
+    vertical-align: top;
+  }
+  &__info {
+    margin: -24rem 0 32rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--fs-5);
+    color: rgba($blackColor, .5);
+    @media (max-width: $lg) {
+      margin-bottom: 36rem;
+    }
+    @media (max-width: $sm) {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+    &-time {
+    }
+    &-view {
+    }
+    > :not(:last-child) {
+      &:after {
+        @media (max-width: $sm) {
+          margin: 0 4rem;
+          content: '\2022';
+        }
+      }
+    }
+  }
+  &__article {
+    margin: 0;
+  }
+  &__our {
+    &-header {
+      margin: 0 0 36rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: $lg) {
+        margin-bottom: 24rem;
+      }
+      @media (max-width: $sm) {
+        flex-wrap: wrap;
+      }
+      &-title {
+        margin: 0;
+        @media (max-width: $sm) {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+      &-btn {
+        flex-shrink: 0;
+        @media (max-width: $lg) {
+          margin-top: 24rem;
+        }
+      }
+    }
+    &-list {
+      &-row {
+        margin-bottom: var(--gap-fluid-);
+      }
+      &-col {
+        margin-bottom: var(--gap-fluid);
+        @media (max-width: $md) {
+          max-width: 50%;
+          flex-basis: 50%;
+        }
+        @media (max-width: $sm) {
+          max-width: 100%;
+          flex-basis: 100%;
+        }
+      }
+      &-card {
+        height: 100%;
+      }
+    }
+  }
+  &__empty {
+    padding-top: 16rem;
+    font-size: var(--fs-4);
+    line-height: $lineHeight5;
+    @media (max-width: $lg) {
+      padding-top: 0;
+    }
+    a {
+      color: $accentLightColor;
+      transition: $transition;
+      transition-property: color;
+      &:hover {
+        text-decoration: none;
+        @media (min-width: $lg-mf) {
+        }
+      }
+    }
+  }
+}

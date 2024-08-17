@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Quill AI - Мои заказы, заполненные'
+  })
+  <body class="u-scrollbar">
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header-auth-typical.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- projects-page BEGIN -->
+          <section class="projects-page">
+            <div class="container container--size-md projects-page__container">
+              <div class="u-breadcrumbs projects-page__breadcrumbs">
+                <ul class="u-breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="chat.html" itemprop="item">
+                      <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                  </li>
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Мои заказы</span>
+                    <meta itemprop="position" content="2">
+                  </li>
+                </ul>
+              </div>
+              <div class="projects-page__our">
+                <div class="projects-page__our-header">
+                  <h1 class="fs-2 projects-page__our-header-title">Ваши работы</h1>
+                  <a href="/#intro" class="btn btn--size-md btn--theme-accent-gradient-fill projects-page__our-header-btn">
+                    <span class="btn__inner">
+                      <span class="btn__title">Начните генерацию</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="projects-page__main">
+                <div class="projects-page__our-list">
+                  <div class="row projects-page__our-list-row">
+                    <div class="row__col--4 projects-page__our-list-col">
+                      <article class="project-card projects-page__our-list-card">
+                        <div class="project-card__inner">
+                          <div class="project-card__content">
+                            <header class="project-card__header">
+                              <h3 class="project-card__title">
+                                <a href="project_user.html" class="project-card__link">Конструктор домашнего ПК</a>
+                              </h3>
+                              <div class="project-card__type"></div>
+                            </header>
+                            <div class="u-content project-card__text">
+                              <p>Проект представляет собой онлайн конструктор для сборки домашнего компьютера с проверкой совместимости комплектующих. Пользовате...</p>
+                            </div>
+                          </div>
+                          <footer class="project-card__footer">
+                            <p class="project-card__rubric">Исследовательский проект</p>
+                            <time class="project-card__date">2 минуты назад</time>
+                          </footer>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="row__col--4 projects-page__our-list-col">
+                      <article class="project-card projects-page__our-list-card">
+                        <div class="project-card__inner">
+                          <div class="project-card__content">
+                            <header class="project-card__header">
+                              <h3 class="project-card__title">
+                                <a href="project_user.html" class="project-card__link">Смотровая площадка в горах</a>
+                              </h3>
+                              <div class="project-card__type"></div>
+                            </header>
+                            <div class="u-content project-card__text">
+                              <p>Проект по созданию смотровой площадки в горах для уникальных панорамных видов на природу и окружающие горные массивы...</p>
+                            </div>
+                          </div>
+                          <footer class="project-card__footer">
+                            <p class="project-card__rubric">Инфраструктурный проект</p>
+                            <time class="project-card__date">16 минут назад</time>
+                          </footer>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="row__col--4 projects-page__our-list-col">
+                      <article class="project-card projects-page__our-list-card">
+                        <div class="project-card__inner">
+                          <div class="project-card__content">
+                            <header class="project-card__header">
+                              <h3 class="project-card__title">
+                                <a href="project_user.html" class="project-card__link">Новые источники нефти и&nbsp;добыча</a>
+                              </h3>
+                              <div class="project-card__type"></div>
+                            </header>
+                            <div class="u-content project-card__text">
+                              <p>Проект поиска и разработки новых месторождений нефти, внедрение технологий для увеличения нефтеотдачи и сведения...</p>
+                            </div>
+                          </div>
+                          <footer class="project-card__footer">
+                            <p class="project-card__rubric">Технологический проект</p>
+                            <time class="project-card__date">34 минуты назад</time>
+                          </footer>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="row__col--4 projects-page__our-list-col">
+                      <article class="project-card projects-page__our-list-card">
+                        <div class="project-card__inner">
+                          <div class="project-card__content">
+                            <header class="project-card__header">
+                              <h3 class="project-card__title">
+                                <a href="project_user.html" class="project-card__link">Новые источники нефти и&nbsp;добыча</a>
+                              </h3>
+                              <div class="project-card__type"></div>
+                            </header>
+                            <div class="u-content project-card__text">
+                              <p>Проект поиска и разработки новых месторождений нефти, внедрение технологий для увеличения нефтеотдачи и сведения...</p>
+                            </div>
+                          </div>
+                          <footer class="project-card__footer">
+                            <p class="project-card__rubric">Технологический проект</p>
+                            <time class="project-card__date">34 минуты назад</time>
+                          </footer>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- projects-page END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer-typical.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

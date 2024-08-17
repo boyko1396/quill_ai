@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Quill AI - Мои заказы, пустые'
+  })
+  <body class="u-scrollbar">
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header-auth-typical.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- projects-page BEGIN -->
+          <section class="projects-page">
+            <div class="container container--size-md projects-page__container">
+              <div class="u-breadcrumbs projects-page__breadcrumbs">
+                <ul class="u-breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a href="chat.html" itemprop="item">
+                      <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                  </li>
+                  <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <span itemprop="name">Мои заказы</span>
+                    <meta itemprop="position" content="2">
+                  </li>
+                </ul>
+              </div>
+              <div class="projects-page__our">
+                <div class="projects-page__our-header">
+                  <h1 class="fs-2 projects-page__our-header-title">Ваши работы</h1>
+                </div>
+              </div>
+              <div class="projects-page__main">
+                <p class="projects-page__empty">Вы еще ничего не сгенерировали, <a href="/#intro">начните&nbsp;генерацию.</a></p>
+              </div>
+            </div>
+          </section>
+          <!-- projects-page END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer-typical.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.page {
+  padding: 80rem 0;
+  @media (max-width: $lg) {
+    padding-bottom: 60rem;
+  }
+  &__container {
+  }
+  &__breadcrumbs {
+    margin: -56rem 0 36rem;
+    @media (max-width: $sm) {
+      margin-bottom: 24rem;
+    }
+  }
+  &__title {
+    margin: 0 0 36rem;
+    @media (max-width: $sm) {
+    }
+  }
+  &__text {
+    font-size: var(--fs-4);
+    line-height: $lineHeight5;
+    @media (max-width: $lg) {
+      font-size: var(--fs-6);
+    }
+  }
+}

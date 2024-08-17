@@ -1,0 +1,90 @@
+.footer {
+  background: $blackColor;
+  padding: 60rem 0 40rem;
+  color: $whiteColor;
+  @media (max-width: $lg) {
+    padding-bottom: 80rem;
+    border-radius: $radiusSemi $radiusSemi 0 0;
+  }
+  &__container {
+  }
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $lg) {
+      flex-wrap: wrap;
+    }
+  }
+  &__logo {
+    flex-shrink: 0;
+    @media (max-width: $lg) {
+      margin: 0 0 52rem;
+    }
+  }
+  &__nav {
+    font-weight: bold;
+    &--main {
+      font-size: var(--fs-5);
+      .footer__nav-list {
+        @media (max-width: $lg) {
+          flex-direction: column;
+        }
+      }
+    }
+    &--submain {
+      font-family: $fontAccent;
+      color: rgba($whiteColor, .5);
+    }
+    & + & {
+      margin-top: 8rem;
+      @media (max-width: $lg) {
+        margin-top: 16rem;
+      }
+    }
+    &-wrapper {
+      @media (max-width: $lg) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &-list {
+      margin: -8rem -6rem;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end;
+      list-style-type: none;
+      @media (max-width: $lg) {
+        margin-top: -6rem;
+        margin-bottom: -6rem;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+    }
+    &-item {
+      margin: 8rem 6rem;
+      padding: 0;
+      @media (max-width: $lg) {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+      }
+    }
+    &-link {
+      transition: $transition;
+      &:hover {
+        text-decoration: none;
+        @media (min-width: $lg-mf) {
+          color: $pacificBlueLightColor;
+        }
+      }
+    }
+  }
+  &__copyright {
+    margin: 24rem 0 0;
+    font-family: $fontAccent;
+    color: rgba($whiteColor, .5);
+    @media (max-width: $lg) {
+      margin-top: 52rem;
+    }
+  }
+}

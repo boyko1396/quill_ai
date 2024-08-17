@@ -1,0 +1,46 @@
+.projects-section {
+  padding: 80rem 0;
+  @media (max-width: $lg) {
+    padding: 30rem 0;
+  }
+  &--page {
+    @media (max-width: $lg) {
+      padding-top: 80rem;
+    }
+  }
+  &__container {
+  }
+  &__breadcrumbs {
+    margin: -56rem 0 36rem;
+    @media (max-width: $lg) {
+      margin-bottom: 24rem;
+    }
+  }
+  &__breadcrumbs ~ &__title {
+    @media (max-width: $lg) {
+      margin-bottom: 24rem;
+    }
+  }
+  &__title {
+    margin: 0 0 36rem;
+  }
+  &__list {
+    &-row {
+      margin-bottom: var(--gap-fluid-);
+    }
+    &-col {
+      margin-bottom: var(--gap-fluid);
+      @media (max-width: $md) {
+        max-width: 50%;
+        flex-basis: 50%;
+      }
+      @media (max-width: $sm) {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+}

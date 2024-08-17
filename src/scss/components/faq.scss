@@ -1,0 +1,18 @@
+.faq {
+  padding: 80rem 0;
+  @media (max-width: $lg) {
+    padding: 90rem 0 60rem;
+  }
+  &__container {
+  }
+  &__title {
+    margin: 0 0 36rem;
+  }
+  &__list {
+    &-card {
+      &:not(:last-child) {
+        margin-bottom: var(--gap);
+      }
+    }
+  }
+}

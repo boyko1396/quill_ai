@@ -1,0 +1,42 @@
+.u-breadcrumbs {
+  font-size: var(--fs-5);
+  font-weight: bold;
+  &__container {
+  }
+  &__list {
+    margin: 0 0 -8rem;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  li {
+    max-width: 100%;
+    margin: 0 0 8rem;
+    padding: 0;
+    flex-shrink: 0;
+    color: $accentLightColor;
+    overflow: hidden;
+    &:not(:last-child) {
+      &:after {
+        margin: 0 8rem 0 3rem;
+        content: '\2014';
+        flex-shrink: 0;
+        color: $blackColor;
+      }
+    }
+    &:last-child {
+    }
+  }
+  a {
+    display: inline-block;
+    color: $blackColor;
+    transition: $transition;
+    &:hover {
+      text-decoration: none;
+      @media (min-width: $lg-mf) {
+        color: $accentLightColor;
+      }
+    }
+  }
+}

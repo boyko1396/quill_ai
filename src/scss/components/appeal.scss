@@ -1,0 +1,63 @@
+.appeal {
+  padding: 80rem 0;
+  @media (max-width: $lg) {
+    padding: 60rem 0;
+  }
+  &__container {
+  }
+  &__block {
+    background: url(../images/appeal-bg.svg) center / cover $blackColor no-repeat;
+    padding: 91rem 45rem;
+    color: $whiteColor;
+    border-radius: $radiusLg;
+    position: relative;
+    @media (max-width: $lg) {
+      padding: 60rem 24rem;
+    }
+  }
+  &__picture {
+    width: 235rem;
+    position: absolute;
+    top: -40rem;
+    right: -10rem;
+    user-select: none;
+    pointer-events: none;
+    @media (max-width: $lg) {
+      width: 144rem;
+      top: -20rem;
+      right: -60rem;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__content {
+    max-width: 600rem;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    @media (max-width: $xs) {
+      max-width: 100%;
+      text-align: left;
+    }
+  }
+  &__title {
+    margin: 0 0 24rem;
+    @media (max-width: $sm) {
+      max-width: 230rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @media (max-width: $xs) {
+      margin: 0 0 24rem;
+    }
+  }
+  &__btn {
+    @media (max-width: $xs) {
+      width: 100%;
+    }
+  }
+}
