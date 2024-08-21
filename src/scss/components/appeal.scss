@@ -25,7 +25,14 @@
     @media (max-width: $lg) {
       width: 144rem;
       top: -20rem;
-      right: -60rem;
+      right: -20rem;
+    }
+    @media (max-width: $xs) {
+      right: initial;
+      left: 300rem;
+    }
+    @media (max-width: 480px) {
+      left: 250rem;
     }
     img {
       width: 100%;

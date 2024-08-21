@@ -55,6 +55,9 @@
     &-input {
       .u-input__el {
         padding-right: 164rem;
+        @media (max-width: $sm) {
+          padding-right: 12rem;
+        }
       }
     }
     &-btn {
@@ -87,9 +90,17 @@
       .control-group__inner {
         @media (max-width: $sm) {
           margin-bottom: -20rem;
+          display: block;
           padding: 0 var(--gap-container) 20rem;
-          flex-wrap: nowrap;
+          font-size: 0;
+          text-align: center;
+          white-space: nowrap;
           overflow-x: auto;
+        }
+      }
+      .control-group__col {
+        @media (max-width: $sm) {
+          display: inline-block;
         }
       }
     }
